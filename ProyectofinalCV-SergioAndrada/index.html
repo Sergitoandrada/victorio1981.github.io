@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo2.css" rel="stylesheet" type="text/css">
+    <title>CV Sergio Andrada</title>
+    <script src="java script/eventos.js"></script>
+</head>
+                        <!--Acá empieza la botonera lateral-->
+<div class="botonera">
+    <a href="#personal"><img class="boton" src="img/personal.png" id="pers" onmousemove="enAmarillo1()" onmouseleave="enNegro1()" alt="informacion personal"> </a>
+    <a href="#laboral"><img class="boton" src="img/laboral.png" id="labo" onmousemove="enAmarillo2()" onmouseleave="enNegro2()" alt="informacion laboral"> </a>
+    <a href="#habilidades"><img class="boton" src="img/habilidades.png" id="habi" onmousemove="enAmarillo3()" onmouseleave="enNegro3()" alt="Habilidades"> </a>
+    <a href="#educacion"><img class="boton" src="img/estudios.png" id="estu" onmousemove="enAmarillo4()" onmouseleave="enNegro4()" alt="estudios"> </a>
+
+</div>
+<body>
+                        <!--Acá empieza lo principal del CV-->
+<div class="degrade">
+    <div class="grilla">
+<div class="intro">
+    <div class="nombres">SERGIO ANDRADA</div>
+    <div class="bajada">Analista de Inventarios</div>
+    <div class="descripcion">Manejo de stock, control de inventario, mantenimiento de inventarios, análisis ABC y aging de partes. Calculo de aprovisionamiento por planificación FIFO y cola. Requerimientos de materia prima e insumos para procesos de industriales de ensamble, tratamiento de proveedores locales, nacionales e internacionales. Solicitud de cotización y negociación de fechas de entrega. Recepción y despacho producto terminado (control de documentación, conformidad y reclamos). Seguimiento de indicadores de compras, pronósticos de consumo y cálculo de lote optimo; análisis de costos y negociación con proveedores. Planificación FIFO, conocimientos de JIT. Buenas prácticas de abastecimiento.</div>
+    <a href="https://www.behance.net/"><img src="img/behance.png" class="icono" id="be" onmousemove="enAmarillo5()" onmouseleave="enNegro5()"></a>
+    <a href="https://github.com/"><img src="img/github.png" class="icono" id="gi" onmousemove="enAmarillo6()" onmouseleave="enNegro6()"></a>
+    <a href="https://www.instagram.com/"><img src="img/linkedin.png" class="icono" id="li" onmousemove="enAmarillo7()" onmouseleave="enNegro7()"></a>
+    <a href="#hablemos"><img src="img/msj11.png" class="icono" id="con" onmousemove="enAmarillo8()" onmouseleave="enNegro8()" alt="mensajes"> </a>
+</div>
+    <img src="img/Ser11.png" width="400" height="200" class="perfil">
+    </div>
+</div> <!--Acá termina lo principal del cv-->
+                        <!--Acá empieza el contenido del CV-->  
+<div class="caja"  id="personal">
+    <div class="titulo">Información Personal</div>
+    <div class="text">    
+        <ul>
+            <li>Edad: 41</li>
+            <li>Residencia: Tafí viejo - Tucumán</li>
+            <li>Nacimiento: 01/04/81</li>
+            <li>Nacionalidad: Argentina</li>
+            <li>Telefono: 0381-4612368</li>
+            <li>E-mail: sergitoandrada@gmail.com</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="caja" id="laboral">
+    <div class="titulo">Experiencia Laboral</div>
+    <div class="text">    
+        <ul>
+            <li>2003 - 2005 / Hyper libertad / Repositor Externo</li>
+            <li>2007 - Act / BGH SA / Analista de inventarios</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="caja" id="habilidades">
+    <div class="titulo">Skills</div>
+    <div class="text">    
+        <ul>
+            <li>Operador de PC avanzado</li>
+            <li>Excel avanzado</li>
+            <li>People Soft</li>
+            <li>Traducción de manuales INGLES/ESPAÑOL</li>
+           
+        </ul>
+    </div>
+</div>
+
+<div class="caja" id="educacion">
+    <div class="titulo">Estudios</div>
+    <div class="text">    
+        <ul>
+            <li>1994 - 1999 / Técnico ElectroMecánico /   Escuela Técnica de Tafí Viejo- ENET N°1 </li>
+            <li>2001 - 2005 / Analista de sistemas / FRT  - UTN </li>
+            <li>2015 - 2017 / ISO 9001:2015 / IRAM</li>
+            <li>2017 - 2018/ Buenas practicas de abastecimiento / IRAM</li>
+        </ul>
+    </div>
+</div>
+<div class="vacio"></div>
+
+<div class="caja" id="hablemos">
+
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Tu nombre:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Tu email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Tu mensage:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <a href="#personal"><input id="submit_button" type="submit" value="Enviar y volver Inicio" /> </a>
+
+    
+</form>
+</div>
+
+
+</body>
+</html>
